@@ -41,3 +41,9 @@ Agendamento de Serviços, com cálculo automático do valor total
 Informações de contato e endereço.  
 Dados de autoria do projeto.  
 Widget VLibras para acessibilidade.
+
+Links para a Entrega
+
+Link para o código (Repositório GitHub): https://github.com/rayze-raven2512/Projeto_PetShop_Facul
+
+Link para a página (GitHub Pages): (https://rayze-raven2512.github.io/Projeto_PetShop_Facul/)
