@@ -4,98 +4,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Pet - TheoShop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
 
-    <header>
-        <h1>Mundo Pet - TheoShop</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <header class="container mt-3">
+        <h1 class="text-center">Mundo Pet - TheoShop</h1>
+        <div id="statusLoja" class="text-center fw-bold mb-2"></div>
+        <nav class="navbar navbar-expand-lg rounded mt-3">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <hr>
+    <div id="carouselPetshop" class="carousel slide mt-4 mb-5 container" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="https://www.patasdacasa.com.br/sites/default/files/2024-05/ra%C3%A7ao-a-granel.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; object-position: bottom;" alt="Petshop em promoção">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Grandes Descontos!</h5>
+                    <p>Até 30% off em rações selecionadas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://facilitaseguros.com.br/wp-content/uploads/2021/06/banho-em-cachorro-saiba-qual-e-a-frequencia-ideal.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; object-position: center;" alt="Banho e tosa no petshop">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Banho e Tosa Premium</h5>
+                    <p>Agende agora e ganhe hidratação grátis.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.nsctotal.com.br/wp-content/uploads/2024/10/heranca-pets-brasil-3.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; object-position: top;" alt="Brinquedos para gatos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Novidades em Acessórios</h5>
+                    <p>Brinquedos e camas super confortáveis.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetshop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPetshop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
 
-    <main>
+    <hr class="container">
+
+    <main class="container mt-4">
 
         <section id="produtos">
-            <h2>Nossos Produtos</h2>
+            <h2 class="mb-4">Nossos Produtos</h2>
 
             <h3>Acessórios</h3>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/280538-368-368/Peitoral-para-Cachorro-Signature-Vermelho-Doco.jpg?v=638131092973430000" alt="Coleira peitoral vermelha" width="150">
-                <p>Descrição: Coleira Peitoral 'Confort' para cães de médio porte.</p>
-                <p>Valor: R$ 79,90</p>
-            </div>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/1067052-368-368/Brinquedo-Bolinha-Cordao-Flicks.png.png?v=638731565228900000" alt="Brinquedo de corda" width="150">
-                <p>Descrição: Brinquedo de corda multicolorido para mastigação.</p>
-                <p>Valor: R$ 25,00</p>
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/280538-368-368/Peitoral-para-Cachorro-Signature-Vermelho-Doco.jpg?v=638131092973430000" alt="Coleira peitoral vermelha" width="150" class="img-thumbnail">
+                    <p>Coleira Peitoral 'Confort' para cães de médio porte.</p>
+                    <p><strong>Valor: R$ 79,90</strong></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/1067052-368-368/Brinquedo-Bolinha-Cordao-Flicks.png.png?v=638731565228900000" alt="Brinquedo de corda" width="150" class="img-thumbnail">
+                    <p>Brinquedo de corda multicolorido para mastigação.</p>
+                    <p><strong>Valor: R$ 25,00</strong></p>
+                </div>
             </div>
 
             <h3>Rações Não Perecíveis</h3>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/819448-368-368/racao-golden-gatos-adultos-sabor-frango-1kg.jpg?v=638126872343400000" alt="Saco de ração para gatos" width="150">
-                <p>Descrição: Ração premium gatos adultos sabor frango (3kg).</p>
-                <p>Valor: R$ 89,90</p>
-            </div>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/1082777-368-368/Racao%20Premier%20Formula%20Caes%20Filhotes%20Racas%20Pequenas%20Frango%2020kg%20frente.webp?v=638906257949770000" alt="Saco de ração para cães" width="150">
-                <p>Descrição: Ração super premium cães filhotes raças pequenas (1kg).</p>
-                <p>Valor: R$ 45,50</p>
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/819448-368-368/racao-golden-gatos-adultos-sabor-frango-1kg.jpg?v=638126872343400000" alt="Saco de ração para gatos" width="150" class="img-thumbnail">
+                    <p>Ração premium gatos adultos sabor frango (3kg).</p>
+                    <p><strong>Valor: R$ 89,90</strong></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/1082777-368-368/Racao%20Premier%20Formula%20Caes%20Filhotes%20Racas%20Pequenas%20Frango%2020kg%20frente.webp?v=638906257949770000" alt="Saco de ração para cães" width="150" class="img-thumbnail">
+                    <p>Ração super premium cães filhotes raças pequenas (1kg).</p>
+                    <p><strong>Valor: R$ 45,50</strong></p>
+                </div>
             </div>
 
             <h3>Higiene e Limpeza</h3>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/1069828-368-368/Tapete-Higienico-MyHug-80x60cm-Fofinho-Informacoes.webp.webp?v=638793911301970000" alt="Pacote de tapetes higiênicos" width="150">
-                <p>Descrição: Tapete higiênico ultra absorvente (Pacote com 30 unidades).</p>
-                <p>Valor: R$ 65,00</p>
-            </div>
-            <div>
-                <img src="https://cobasi.vteximg.com.br/arquivos/ids/1064630-368-368/K-Treat-Soft-Care-300-ml.png?v=638688481540800000" alt="Frasco de shampoo para pets" width="150">
-                <p>Descrição: Shampoo hipoalergênico 'Pelos Macios' (500ml).</p>
-                <p>Valor: R$ 32,00</p>
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/1069828-368-368/Tapete-Higienico-MyHug-80x60cm-Fofinho-Informacoes.webp.webp?v=638793911301970000" alt="Pacote de tapetes higiênicos" width="150" class="img-thumbnail">
+                    <p>Tapete higiênico ultra absorvente (Pacote com 30 unidades).</p>
+                    <p><strong>Valor: R$ 65,00</strong></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <img src="https://cobasi.vteximg.com.br/arquivos/ids/1064630-368-368/K-Treat-Soft-Care-300-ml.png?v=638688481540800000" alt="Frasco de shampoo para pets" width="150" class="img-thumbnail">
+                    <p>Shampoo hipoalergênico 'Pelos Macios' (500ml).</p>
+                    <p><strong>Valor: R$ 32,00</strong></p>
+                </div>
             </div>
         </section>
 
         <hr>
 
         <section id="servicos">
-            <h2>Nossos Serviços</h2>
-
-            <div>
-                <h3>Banho e Tosa</h3>
-                <p>Descrição: Serviço completo de banho, hidratação e tosa higiênica. Seu pet limpo e cheiroso! (O cliente deve trazer o pet até a loja).</p>
-                <p>Valor: R$ 80,00</p>
-            </div>
-            
-            <div>
-                <h3>Banho e Tosa com Tele-Busca</h3>
-                <p>Descrição: O mesmo serviço completo de Banho e Tosa, com a comodidade e segurança de buscarmos e levarmos seu pet na sua casa.</p>
-                <p>Valor: R$ 105,00 (R$ 80,00 do serviço + R$ 25,00 da Tele-Busca)</p>
+            <h2 class="mb-4">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3 mb-3">
+                        <h3>Banho e Tosa</h3>
+                        <p>Serviço completo de banho, hidratação e tosa higiênica. Seu pet limpo e cheiroso! (O cliente deve trazer o pet até a loja).</p>
+                        <p class="fw-bold">Valor: R$ 80,00</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card p-3 mb-3">
+                        <h3>Banho e Tosa com Tele-Busca</h3>
+                        <p>O mesmo serviço completo de Banho e Tosa, com a comodidade e segurança de buscarmos e levarmos seu pet na sua casa.</p>
+                        <p class="fw-bold">Valor: R$ 105,00 (R$ 80,00 do serviço + R$ 25,00 da Tele-Busca)</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <hr class="my-5">
+
+        <section id="cadastro" class="mb-5">
+            <h2 class="mb-4">Cadastro de Cliente e Pet</h2>
+            
+            <div class="card p-4 shadow-sm border-primary">
+                <form id="formCadastro">
+                    <h5 class="mb-3 text-primary">Dados Pessoais</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nomeCliente" class="form-label">Nome Completo *</label>
+                            <input type="text" class="form-control" id="nomeCliente" placeholder="Ex: Mariana Souza" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cpfCliente" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpfCliente" placeholder="000.000.000-00">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="emailCliente" class="form-label">E-mail *</label>
+                            <input type="email" class="form-control" id="emailCliente" placeholder="mariana@email.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefoneCliente" class="form-label">Telefone/WhatsApp *</label>
+                            <input type="tel" class="form-control" id="telefoneCliente" placeholder="(11) 99999-9999" required>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label for="enderecoCliente" class="form-label">Endereço Completo</label>
+                            <input type="text" class="form-control" id="enderecoCliente" placeholder="Rua, Número, Bairro e Complemento">
+                        </div>
+
+                        <div class="col-12 mt-2">
+                            <label class="form-label d-block fw-bold">Sexo:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexoCliente" id="sexoM" value="M">
+                                <label class="form-check-label" for="sexoM">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexoCliente" id="sexoF" value="F">
+                                <label class="form-check-label" for="sexoF">Feminino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h5 class="mb-3 text-primary">Dados do Pet</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nomePet" class="form-label">Nome do Pet *</label>
+                            <input type="text" class="form-control" id="nomePet" placeholder="Ex: Theo" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="racaPet" class="form-label">Raça</label>
+                            <input type="text" class="form-control" id="racaPet" placeholder="Ex: Poodle, Shih Tzu...">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="idadePet" class="form-label">Idade (Anos)</label>
+                            <input type="number" class="form-control" id="idadePet" min="0" max="30">
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary" type="submit" onclick="alert('Cadastro realizado com sucesso!')">Finalizar Cadastro</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="agendamento" class="mb-5">
+            <h2 class="mb-4">Agendamento de Serviço</h2>
+            
+            <div class="card p-4 shadow-sm border-success">
+                <form id="formAgendamento">
+                    <h5 class="mb-3 text-success">Detalhes do Agendamento</h5>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="tipoServico" class="form-label">Escolha o Serviço *</label>
+                            <select class="form-select" id="tipoServico" required>
+                                <option selected disabled value="">Selecione uma opção...</option>
+                                <option value="completo" selected>Banho e Tosa Completo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <label class="form-label d-block fw-bold">Como deseja ser atendido?</label>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="metodoAgendamento" id="entregaLocal" checked onclick="atualizarPreco()">
+                                <label class="form-check-label" for="entregaLocal">
+                                    No local (Eu levo o pet)
+                                </label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="metodoAgendamento" id="teleBusca" onclick="atualizarPreco()">
+                                <label class="form-check-label" for="teleBusca">
+                                    Tele-busca (Buscamos em casa)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="dataAgendamento" class="form-label">Data *</label>
+                            <input type="date" class="form-control" id="dataAgendamento" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="horaAgendamento" class="form-label">Horário *</label>
+                            <input type="time" class="form-control" id="horaAgendamento" required>
+                        </div>
+                        
+                        <div class="col-12 mt-4">
+                            <div class="alert alert-light border border-secondary">
+                                <h6 class="fw-bold">Resumo de Valores:</h6>
+                                <p class="mb-1 small">Serviço Base: R$ 80,00</p>
+                                <p class="mb-2 small text-muted" id="taxaEntregaDisplay">Taxa de deslocamento: R$ 0,00</p>
+                                <hr>
+                                <h5 class="text-success fw-bold" id="totalDisplay">Total Estimado: R$ 80,00</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="declaracaoVerdadeira" required>
+                                <label class="form-check-label" for="declaracaoVerdadeira">
+                                    Declaro que as informações acima são verdadeiras. *
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="receberPromocoes">
+                                <label class="form-check-label" for="receberPromocoes">
+                                    Quero receber promoções por e-mail.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-success w-100" type="submit" onclick="alert('Serviço agendado com sucesso!')">Confirmar Agendamento</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="script.js"></script>
+        
+        </section>
+
+
     </main>
 
-    <hr>
+    <hr class="container">
 
-    <footer id="contato">
-        <h3>Informações de Contato</h3>
-        <p>Telefone: (11) 96082-7449</p>
-        <p>Email: contato@theoshop.com.br</p>
-        <p>Endereço: Av. Jacutinga, 110 - Moema, São Paulo - SP</p>
-
-        <br>
-        
-        <p>Trabalho desenvolvido por: Kaike de Souza Vieira</p>
-        <p>© 2025 - Todos os direitos reservados.</p>
+    <footer id="contato" class="text-center py-4 mt-5">
+        <div class="container">
+            <h3>Informações de Contato</h3>
+            <p>Telefone: (11) 96082-7449 | Email: contato@theoshop.com.br</p>
+            <p>Endereço: Av. Jacutinga, 110 - Moema, São Paulo - SP</p>
+            <br>
+            <p class="small">Trabalho desenvolvido por: Kaike de Souza Vieira</p>
+            <p class="small">© 2025 - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,84 @@
+/*Fundo Geral e Texto */
+body {
+    background-color: #1c1c1c; 
+    color: #f0f0f0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho (Header) */
+header h1 {
+    color: #ff6f00; 
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Navegação */
+.navbar {
+    background-color: #2d2d2d !important; 
+    border-bottom: 3px solid #ff6f00; 
+}
+
+.navbar a.nav-link {
+    color: white !important; 
+    font-weight: 500;
+}
+
+.navbar a.nav-link:hover {
+    color: #ff6f00 !important; 
+}
+
+/* Títulos das Seções (H2, H3) */
+h2, h3 {
+    color: #ff914d; 
+}
+
+/* Cards (Produtos e Serviços) */
+.card {
+    background-color: #2d2d2d; 
+    border: 1px solid #444; 
+    color: white; 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    border-color: #ff6f00; 
+}
+
+/* Botões Principais (Azul vira Laranja) */
+.btn-primary {
+    background-color: #ff6f00 !important;
+    border-color: #ff6f00 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e65100 !important; 
+}
+
+/* Inputs do Formulário (Para não ficarem brancos demais) */
+input.form-control, select.form-select {
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+}
+
+input.form-control:focus, select.form-select:focus {
+    background-color: #444;
+    border-color: #ff6f00;
+    color: white;
+    box-shadow: 0 0 5px rgba(255, 111, 0, 0.5);
+}
+
+/* Placeholder */
+::placeholder {
+    color: #bbb !important;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000 !important; 
+    border-top: 3px solid #ff6f00;
+    color: #ccc;
+}
