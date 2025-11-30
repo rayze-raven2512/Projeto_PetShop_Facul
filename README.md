@@ -32,9 +32,9 @@ Informações de valor e descrição.
 Banner rotativo com promoções e serviços.
 
 **Formulários:**  
-- Cadastro de Cliente  
-- Cadastro de Pet  
-- Agendamento de Serviços, com cálculo automático do valor total
+Cadastro de Cliente  
+Cadastro de Pet  
+Agendamento de Serviços, com cálculo automático do valor total
 
 ### Rodapé `<footer>`
 
